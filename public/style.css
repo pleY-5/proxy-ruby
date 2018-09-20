@@ -31,15 +31,12 @@
 
 #sb-app {
   width: 298px;
-}
-
-#sb-container {
   display: inline-flex;
   position: relative;
   border: 1px solid white;
   right: 1px;
-  height: 350px;
-  padding-top: 27px;
+  padding-top: 28px;
+  padding-bottom: 27px;
 }
 
 body {
