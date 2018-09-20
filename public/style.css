@@ -1,20 +1,48 @@
 #nav {
+  display: flex;
   position: absolute;
   width: 100%;
   height: 104px;
-  z-index: -1;
   top: 0px;
 }
 
 #header-photo-container {
-  position: relative;
   background-color: #f5f5f5;
-  height: 400px;
-  margin-bottom: 100px;
+  height: 420px;
+  margin-bottom: 55px;
 }
 
 #photo-wheel {
-  position: absolute;
-  bottom: 0px;
-  right: 302px;
+  position: relative;
+  top: 60px;
+  right: 20px;
+}
+
+#body-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+#root {
+  width: 685px;
+  display: inline-flex;
+}
+
+#sb-app {
+  width: 298px;
+}
+
+#sb-container {
+  display: inline-flex;
+  position: relative;
+  border: 1px solid white;
+  right: 1px;
+  height: 350px;
+  padding-top: 27px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
