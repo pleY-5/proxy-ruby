@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js"
+    "start": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "compression": "^1.7.3",
     "express": "^4.16.3",
     "express-http-proxy": "^1.4.0",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "newrelic": "^4.9.0"
   }
 }

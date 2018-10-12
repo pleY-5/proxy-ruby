@@ -1,0 +1,12 @@
+config:
+  target: 'http://localhost:8080'
+  phases:
+    - duration: 30
+      arrivalRate: 100
+scenarios:
+  - name: "Simple Get"
+    flow:
+      - loop:
+          - get:
+              url: "/{{ $randomNumber(8000000, 10000000) }}/"
+        count: 500
