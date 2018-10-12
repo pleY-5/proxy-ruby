@@ -2,14 +2,19 @@ require('newrelic');
 const express = require('express');
 const app = express();
 const proxy = require('express-http-proxy');
+const path = require('path');
 
 const bodyParser = require('body-parser');
 const compression = require('compression');
 
-const router = require('./routes.js');
+// const router = require('./routes.js');
 
 app.use(bodyParser.json());
 app.use(compression());
+
+app.use(process.env.LOADER_URL, (req, res) => {
+  res.sendFile(path.join(__dirname, '../public', 'loaderio-7e70dcee6351c8c38041763c268f00f9.tx'))
+})
 
 app.use('/:nameOrId', express.static('public'));
 
